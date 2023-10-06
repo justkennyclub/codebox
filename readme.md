@@ -11,3 +11,7 @@ Core concepts:
 - all js is located under /scripts/, where `dist` is generated from compiling our TS development codes into JS. Others like main.js, require.js are not compiled, but either coded or from library
 - the important thing is our dev codes in TS/TSX are compiled in amd module (and also transpiled for react), so we can still use triple slash etc., and such compilation and transpilation are correct.
 - with all this, browser literally just navigate to the entry index.html and everything should work.
+
+Misc
+To update all commit author together:
+`git rebase -r --root --exec "git commit --amend --author='justkennyclub <justkennyclub@gmail.com>' -C HEAD"`
