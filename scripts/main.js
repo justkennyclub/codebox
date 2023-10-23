@@ -20,6 +20,8 @@ require.config({
 //     );
 //   });
 
+// using only "AppStarter" and not "dev/AppStarter" causes requirejs to look into scripts/ dir
+// so we use the "dev/" as redirection via require config above to look into /dist for all dev/
 require(["dev/AppStarter"], function (AppStarter) {
   AppStarter.AppStarter.launch();
 });
